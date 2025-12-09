@@ -30,7 +30,7 @@ Detectie-inzicht:
 - als een applicatie direct Native API gebruikt voor gevoelige acties, kan dit wijzen op omzeiling van monitoring op hoger niveau
 - de uitkomst is hetzelfde, de kernel voert de actie uit, maar de eventstroom kan net anders zijn
 
-## 3.3 Waar lopen API-calls in de EDR-telemetry terug
+## 3.3 Waar lopen API-calls in de EDR-telemetrie terug
 EDR registreert niet elke afzonderlijke API-call, maar de gevolgen, de objecten en de context. Je ziet daarom terug:
 
 - CreateProcess, Start, event.category: process, event.action: process.start

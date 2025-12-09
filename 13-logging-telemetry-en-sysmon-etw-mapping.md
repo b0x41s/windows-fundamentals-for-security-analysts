@@ -1,18 +1,18 @@
 # 13. Logging, Telemetry en Sysmon/ETW Mapping
 
-## 13.1 Verschil tussen Windows logs en EDR telemetry
-Windows logs en EDR-telemetry vullen elkaar aan, ze zijn niet hetzelfde.
+## 13.1 Verschil tussen Windows logs en EDR-telemetrie
+Windows logs en EDR-telemetrie vullen elkaar aan, ze zijn niet hetzelfde.
 
 - Windows event logs
   - geschreven door het besturingssysteem en applicaties, vaak in het Event Log
   - nuttig voor compliance, audit en breed systeemoverzicht
   - kunnen ontbrekende details hebben, afhankelijk van auditpolicy en kanaal
-- EDR-telemetry
+- EDR-telemetrie
   - verzameld door een sensor die procesgedrag observeert in User Mode en Kernel Mode
   - gericht op security, met extra context, correlaties en verrijking
   - doorgaans fijnmaziger bij proces, geheugen, module en toegangspaden
 
-Detectie-inzicht, gebruik EDR-telemetry voor gedrag en volgorde, gebruik Windows logs om bredere context te bevestigen, aanmeldingen, policies, service status.
+Detectie-inzicht, gebruik EDR-telemetrie voor gedrag en volgorde, gebruik Windows logs om bredere context te bevestigen, aanmeldingen, policies, service status.
 
 ## 13.2 Belangrijkste event logs voor analisten
 Niet elk logkanaal is even waardevol voor detection. Deze komen het vaakst terug in triage.
@@ -67,7 +67,7 @@ Wat je als analist moet onthouden:
 Praktische aanwijzing, je detecteert ETW-manipulatie via bijeffecten, minder events waar je ze wel verwacht, writes naar tracing keys of service-interventies.
 
 ## 13.5 Detectie op basis van event correlation
-Sterke detecties ontstaan door meerdere zwakke signalen te combineren over een tijdvenster. Dit geldt voor bronnen onderling en binnen de EDR-telemetry.
+Sterke detecties ontstaan door meerdere zwakke signalen te combineren over een tijdvenster. Dit geldt voor bronnen onderling en binnen de EDR-telemetrie.
 
 Principes:
 - werk met sequences, bijvoorbeeld, file_create → registry_set → process_start
@@ -113,9 +113,8 @@ Praktische tips:
 - gebruik meerdere bronnen parallel, EDR, Sysmon en Windows logs, om bevindingen te bevestigen
 
 ## Samenvatting
-- Windows logs en EDR-telemetry vullen elkaar aan, EDR geeft gedragscontext, logs geven breed systeembeeld
+- Windows logs en EDR-telemetrie vullen elkaar aan, EDR geeft gedragscontext, logs geven breed systeembeeld
 - Sysmon biedt extra events die goed te mappen zijn naar Elastic’s event.category en event.action
 - ETW is een belangrijke bron onder de motorkap, daling of manipulatie zie je via bijeffecten
 - Sterke detecties zijn sequences met context, pad, signering en rechten, afgestemd op gevoelige doelen
 - Minimaliseer ruis met baselining, specifieke uitzonderingen en continue evaluatie van rule-prestaties
-

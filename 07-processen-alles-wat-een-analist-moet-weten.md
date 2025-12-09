@@ -110,7 +110,7 @@ process.name:(powershell.exe pwsh.exe cmd.exe wscript.exe cscript.exe)
 Ongetekend uit gebruikerspad met netwerkactiviteit kort erna:
 ```
 process where code_signature.trusted:false and 
-process.executable:(*\\Users\\*\\AppData\\* or *\\Temp\\* or *\\Downloads\\*)
+process.executable:(*\\\\Users\\\\*\\\\AppData\\\\* or *\\\\Temp\\\\* or *\\\\Downloads\\\\*)
 then within 2m network where event.action:network_connection
 ```
 
@@ -124,8 +124,8 @@ filters: target.process.name in (lsass.exe, chrome.exe, msedge.exe)
 Sideloading indicatie, module buiten systeempaden:
 ```
 event.action:dll_load and 
-not file.path:"C:\\Windows\\System32\\*" and 
-file.path:(*\\AppData\\* or *\\Program Files\\* or *\\Temp\\*) and 
+not file.path:"C:\\\\Windows\\\\System32\\\\*" and 
+file.path:(*\\\\AppData\\\\* or *\\\\Program Files\\\\* or *\\\\Temp\\\\*) and 
 not code_signature.trusted:true
 ```
 

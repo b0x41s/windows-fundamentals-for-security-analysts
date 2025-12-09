@@ -10,6 +10,9 @@ Belangrijke effecten voor analisten:
 
 Waarom verwarrend, paden in events lijken op elkaar, maar verwijzen naar andere realiteit. Dit kan verkeerde aannames over herkomst, signering of capabilities geven als je niet naar de architectuur kijkt.
 
+Praktische duiding voor beginners:
+- Op 64 bit Windows is `System32` 64 bit en `SysWOW64` 32 bit, de namen zijn historisch gegroeid en daardoor contra-intuïtief.
+
 ## 14.2 Waarom sommige processen 32 bit zijn op 64 bit systemen
 Er zijn legitieme redenen waarom je 32 bit processen ziet op 64 bit hosts.
 
@@ -91,4 +94,3 @@ Praktische ruisbeperking:
 - EDR toont architectuur en padcontext, inconsistenties tussen 32 en 64 bit gedrag geven sterke signalen
 - Verdacht zijn 32 naar 64 bit injecties, Sysnative gebruik door 32 bit processen, en Run keys onder WOW6432Node met gebruikerspaden
 - Beperk ruis met whitelists voor bekende 32 bit software en let op vendorconsistentie en signering
-

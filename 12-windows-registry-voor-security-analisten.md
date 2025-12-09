@@ -101,7 +101,7 @@ Artefacten en aandachtspunten, conceptueel:
 - per-user hives, vergeet uitgelogde gebruikers niet, laad HKU hives waar nodig
 - TaskCache voor geplande taken, koppeling naar `Tree` en naar bestanden op schijf
 - COM en CLSID entries, InprocServer32 wijst naar de DLL, vergelijken met file hashes en signering
-- Defender en policywijzigingen, verklaren waarom logging of protección afneemt
+- Defender en policywijzigingen, verklaren waarom logging of bescherming afneemt
 
 Grenzen en valkuilen:
 - sommige keys worden automatisch herschreven door legitieme software, vergelijk met baseline
@@ -150,4 +150,3 @@ then within 10m process where process.start and user.name != "SYSTEM"
 - Run keys zijn eenvoudig maar veelgebruikt, verdacht zijn writes vanuit Office of browser naar gebruikerspaden
 - Elastic registreert registry_set, registry_add en registry_delete, combineer met file en process voor sterke sequences
 - In IR helpen hives, LastWrite en TaskCache om tijdlijnen en persistentie te reconstrueren, vergelijk altijd met baseline
-

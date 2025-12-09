@@ -17,7 +17,7 @@ Waarom dit ertoe doet voor detection:
 Herken het normale profiel per applicatietype en vergelijk daar tegen.
 
 Normaal gedrag:
-- modules uit `C:\Windows\System32` of `WinSxS`, correct gesigneerd
+- modules uit `C:\\Windows\\System32` of `WinSxS`, correct gesigneerd
 - stabiele set van kern-DLL’s, aangevuld met applicatiespecifieke modules
 - vroege loads tijdens process.start, daarna incidentele late loads voor specifieke features
 
@@ -69,8 +69,8 @@ Waar je op let in Elastic:
 
 Voorbeeld, conceptuele command line patronen:
 ```
-rundll32.exe C:\Users\<user>\AppData\Local\Temp\x.dll,Start
-rundll32.exe <pad>\legit.dll,Control_RunDLL <verdachte-arg>
+rundll32.exe C:\\Users\\<user>\\AppData\\Local\\Temp\\x.dll,Start
+rundll32.exe <pad>\\legit.dll,Control_RunDLL <verdachte-arg>
 ```
 
 ## 5.5 Verdachte module loads in Elastic herkennen
@@ -88,13 +88,13 @@ Handige correlaties:
 
 Conceptuele query-ideeën:
 ```
-event.action:"dll_load" and not file.path: "C:\\Windows\\System32\\*" 
+event.action:"dll_load" and not file.path: "C:\\\Windows\\\\System32\\\\*" 
 and not code_signature.trusted: true
 ```
 
 ```
 event.action:"dll_load" and process.name:("winword.exe" "excel.exe" "powerpnt.exe")
-and file.path:("*\\AppData\\*" "*\\Temp\\*" "*\\Downloads\\*")
+and file.path:("*\\\\AppData\\\\*" "*\\\\Temp\\\\*" "*\\\\Downloads\\\\*")
 ```
 
 ## 5.6 Misbruik van delay loading en API-resolutie

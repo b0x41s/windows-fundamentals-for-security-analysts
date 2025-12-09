@@ -120,7 +120,7 @@ filters: exclude process.name in (MsMpEng.exe, Elastic*, Crowd*, Sentinel*)
 -- Sideloading vanuit applicatiemap met userschrijfrechten
 event.action:"dll_load" and 
 not file.path:"C:\\Windows\\System32\\*" and 
-file.path:("*\\AppData\\*" "*\\Temp\\*" "*\\Program Files\\*" ) and 
+file.path:("*\\\AppData\\\*" "*\\\Temp\\\*" "*\\\Program Files\\\*" ) and 
 not code_signature.trusted:true
 ```
 

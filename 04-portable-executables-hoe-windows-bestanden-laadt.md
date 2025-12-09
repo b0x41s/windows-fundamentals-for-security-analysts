@@ -23,7 +23,7 @@ Waarom dit helpt bij triage:
 - timing na start, snelle reeks van ongewone loads kan op sideloading wijzen
 
 ## 4.2 Wat elke analist moet weten over PE’s, zonder reverse engineering
-Je hoeft een PE niet te dissassembleren. Enkele velden en concepten zijn genoeg om risico te duiden.
+Je hoeft een PE niet te disassembleren. Enkele velden en concepten zijn genoeg om risico te duiden.
 
 Waar je op let:
 - architectuur, 32 of 64 bit, moet aansluiten op het proces en het platform

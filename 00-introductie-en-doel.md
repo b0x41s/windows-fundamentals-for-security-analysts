@@ -57,3 +57,4 @@ Begrippen die we steeds gebruiken, in praktische taal:
 - Elastic volgt processen end-to-end en levert contextrijke gebeurtenissen
 - Gebruik dit document als naslagwerk tijdens hunting en incident response
 - Focus op context, toegang, geheugen, API-gebruik en correlatie
+

@@ -175,3 +175,4 @@ Create Section -> Map (bron) -> Write (bron) -> Map (doel) -> Execute (doel)
 - RWX is verdacht, sequentie RW naar RX plus uitvoering is doorslaggevend
 - Combineer geheugen met proces, module, thread en toegangssignalen voor context
 - Bouw detecties als sequences, alloceren, schrijven, beschermen, uitvoeren in kort tijdvenster, vooral richting een ander proces
+

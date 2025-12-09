@@ -72,7 +72,7 @@ Een simpele kapstok, bijna alles volgt dit patroon.
 4. Telemetrie wordt vastgelegd en verrijkt
 
 Waar je op let:
-- Toegang tot gevoelige paden, bijvoorbeeld Windows, System32, ProgramData, AppData\Roaming\Microsoft\Windows\Start Menu, Run keys in de registry
+- Toegang tot gevoelige paden, bijvoorbeeld Windows, System32, ProgramData, AppData\\Roaming\\Microsoft\\Windows\\Start Menu, Run keys in de registry
 - Netwerk naar ongewone bestemmingen of protocollen buiten het normale profiel van het proces
 - Schrijfacties gevolgd door module loads of nieuwe processtarts
 
@@ -173,3 +173,4 @@ Analist beoordeelt gedrag in context
 - Let op parent-child relaties, onverwachte DLL’s, geheugenprotecties, gevoelige paden en netwerk in ongebruikelijke processen
 - Systeem-DLL’s vertellen welk type functionaliteit gebruikt wordt, afwijkingen vallen op
 - Detectie is het verbinden van gebeurtenissen in volgorde, wie deed wat, wanneer en met welke rechten
+
