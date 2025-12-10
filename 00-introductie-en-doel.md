@@ -24,7 +24,7 @@ Elastic Security EDR volgt de levensloop van processen en koppelt gebeurtenissen
 - **EDR**: richt zich op volledige context. Het registreert acties over tijd, correleert gebeurtenissen en ondersteunt onderzoek en respons (isoleren, killen, blokkeren).
 - **Antivirus**: focust vooral op bekende malware en signaturen. Het beoordeelt veelal afzonderlijke bestanden of acties en biedt minder inzicht in de volledige keten.
 
-## 00.3 Hoe dit document gebruikt moet worden
+## 00.3 Hoe dit document gebruikt kan worden
 Gebruik dit document als referentiegids tijdens triage of threat hunting:
 - Lees hoofdstukken lineair wanneer je je fundament wilt opbouwen.
 - Spring naar specifieke onderwerpen, bijvoorbeeld geheugen, services of handles, tijdens een onderzoek.
