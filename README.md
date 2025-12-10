@@ -1,4 +1,3 @@
-# Windows fundamentals for security analysts
 
 ![Course banner](./pictures/coursebanner.png)
 
