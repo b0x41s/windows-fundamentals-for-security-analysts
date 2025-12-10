@@ -10,7 +10,7 @@ Aanpak voor lezen:
 
 Let op: queryvoorbeelden in deze repository zijn conceptueel/pseudo en bedoeld als denkrichting. Pas ze aan op jouw datamodel (Elastic) en omgeving.
 
-## **INHOUDSOPGAVE
+## **INHOUDSOPGAVE**
 
 ---
 
