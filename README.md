@@ -1,4 +1,4 @@
-# Windows Internals for Detection Engineers, index
+# Windows fundamentals for security analysts
 
 ![Course banner](./pictures/coursebanner.png)
 
